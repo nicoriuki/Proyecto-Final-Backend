@@ -49,3 +49,13 @@ npm start
 ```sh
 npm run dev
 ```
+
+### Pasos
+
+- Desde postman registrarse y se envia mail
+- luego hacer el login y guardar el token
+- crear los productos
+- los carritos se crean automaticamente cuando se crea un usuario cada usuario tiene un solo carrito
+- se cargan los carritos con el id del carrito y el id del producto y la cantidad
+- al crear la orden con el id del carrito se crea la orden y se vacia el carrito y se envia mail
+- esta creada la ruta de los mensajes o se puede conectar un Front con socket
