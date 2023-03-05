@@ -60,8 +60,9 @@ class UsersController {
       }
       async updateUser(req, res) {
             try {
+                  const { id } = req.params;
                   const { body } = req;
-                  await UsersService.updateUser(body.id, body);
+                  await UsersService.updateUser(id, body);
                   const data = await UsersService.getAllUsers();
                   return res.status(200).json(data);
             } catch (error) {
