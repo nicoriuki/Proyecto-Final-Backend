@@ -7,6 +7,6 @@ router.use(auth);
 router.get('/', userControllers.getAllUsers);
 router.get('/:id', userControllers.getUserById);
 router.post('/', userControllers.createUser);
-router.put('/', userControllers.updateUser);
+router.put('/:id', userControllers.updateUser);
 router.delete('/:id', userControllers.deleteUser);
 export default router;
