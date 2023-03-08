@@ -68,7 +68,9 @@ class UsersController {
                   const data = await UsersService.getAllUsers();
                   return res.status(200).json(data);
             } catch (error) {
-                  res.status(404).json('id no encontrado', error.message);
+                  res.status(404).json(
+                        `id no encontrado : ERROR, ${error.message}`
+                  );
             }
       }
 }
